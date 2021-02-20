@@ -1,8 +1,9 @@
 # Openbot-Online
 Openbot Online is a robot car that can be controlled wirelessly over the internet.
 
+This project is based on the Openbot platform - https://www.openbot.org/, where you can find the original code and assembly instructions. Openbot supports several accessories including an ultrasonic sensor, speed sensors, battery meter, indicator lights, etc., that are not included here. 
+
 ![alt text](https://github.com/enjineerMan/Openbot-Online/blob/main/IoT_pic.jpg)
-This project is based on the Openbot platform - https://www.openbot.org/, where you can find the code and assembly instructions. Openbot supports several accessories including an ultrasonic sensor, speed sensors, battery meter, indicator lights, etc., that are not included here. 
 
 You can start by implementing an analog joystick as a placeholder for the wireless controls, to test the functionality of your robot car. Power the arduino remotely with the battery pack by wiring it [in parallel](https://drive.google.com/file/d/1-fU374w7UUGw3x4KoXRMy0vZBtCq_B5N/view?usp=sharing) with the L298n motor.
 ![alt text](https://github.com/enjineerMan/Openbot-Online/blob/main/cargif.gif)
