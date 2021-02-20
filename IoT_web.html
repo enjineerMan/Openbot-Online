@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>IoT Car.</p>
+
+<button id="up" onclick="myFunction(this.id)">Up</button>
+<button id="down" onclick="myFunction(this.id)">Down</button>
+<button id="left" onclick="myFunction(this.id)">Left</button>
+<button id="right" onclick="myFunction(this.id)">Right</button>
+<script>
+    window.addEventListener("keydown", function (event) {
+    if (event.defaultPrevented) {
+      return; // Do nothing if the event was already processed
+    }
+  
+    switch (event.key) {
+      case "ArrowDown":
+        document.getElementById("down").style.background='#7FFF00'; //execute python files here
+        break;
+      case "ArrowUp":
+        document.getElementById("up").style.background='#7FFF00';//execute python files here
+        break;
+      case "ArrowLeft":
+        document.getElementById("left").style.background='#7FFF00';//execute python files here
+        break;
+      case "ArrowRight":
+        document.getElementById("right").style.background='#7FFF00';//execute python files here
+        break;
+      default:
+        document.getElementById("right").style.background='#000000';//execute python files here
+        return; // Quit when this doesn't handle the key event.
+    }
+  
+    // Cancel the default action to avoid it being handled twice
+    event.preventDefault();
+  }, true);
+  window.addEventListener("keyup", function (event) {
+    if (event.defaultPrevented) {
+      return; // Do nothing if the event was already processed
+    }
+  
+    switch (event.key) {
+      case "ArrowDown":
+        document.getElementById("down").style.background='#FFFFFF';
+        break;
+      case "ArrowUp":
+        document.getElementById("up").style.background='#FFFFFF';
+        break;
+      case "ArrowLeft":
+        document.getElementById("left").style.background='#FFFFFF';
+        break;
+      case "ArrowRight":
+        document.getElementById("right").style.background='#FFFFFF';
+        break;
+      default:
+        document.getElementById("right").style.background='#FFFFFF';
+        return; // Quit when this doesn't handle the key event.
+    }
+  
+    // Cancel the default action to avoid it being handled twice
+    event.preventDefault();
+  }, true);
+  // the last option dispatches the event to the listener first,
+  // then dispatches event to window
+</script>
+
+</body>
+</html>
+
