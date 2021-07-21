@@ -1,3 +1,8 @@
+:root {
+  --arrowY: 400px;
+  --arrowX: 0;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +40,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.left {
+  position: absolute;
+  left: var(--arrowY);
+  top: 200px;
+  height: 50px;
+  width: 70px;
+}
+
+.right {
+  position: absolute;
+  left: calc(var(--arrowY) + 80px);
+  top: 200px;
+  height: 50px;
+  width: 70px;
+}
+
+.arrow-icon {
+  position: absolute;
+  right: 15px;
+  top: 4px;
 }
