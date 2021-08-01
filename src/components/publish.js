@@ -12,7 +12,6 @@ function mqttConnect(host, mqttOption) {
   const username = "user";
   const password = "pass";
   const topic = "topic098651";
-  const payload = "please work";
   const url = `ws://${host}:${port}/mqtt`;
   const options = {
     keepalive: 30,
@@ -41,7 +40,7 @@ function mqttConnect(host, mqttOption) {
 
   // var topic = "topic098651";
   // var message = "this shows up if you run publishtest.js";
-const publish = function() {
+const publish = function(payload) {
   
   if (client) {
     client.publish(topic, payload, 1, (error) => {
