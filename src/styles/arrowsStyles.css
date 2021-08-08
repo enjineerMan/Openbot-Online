@@ -1,0 +1,42 @@
+:root {
+    --arrowY: 475px;
+    --arrowX: 470px;
+  }
+
+.left {
+    position: absolute;
+    left: var(--arrowX);
+    top: calc(var(--arrowY) + 60px);
+    height: 50px;
+    width: 70px;
+}
+
+.right {
+    position: absolute;
+    left: calc(var(--arrowX) + 160px);
+    top: calc(var(--arrowY) + 60px);
+    height: 50px;
+    width: 70px;
+}
+
+.down {
+    position: absolute;
+    left: calc(var(--arrowX) + 80px);
+    top: calc(var(--arrowY) + 60px);
+    height: 50px;
+    width: 70px;
+}
+
+.up {
+    position: absolute;
+    left: calc(var(--arrowX) + 80px);
+    top: calc(var(--arrowY));
+    height: 50px;
+    width: 70px;
+}
+
+.arrow-icon {
+    position: absolute;
+    right: 15px;
+    top: 4px;
+}
