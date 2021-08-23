@@ -8,7 +8,7 @@ import About from './pages/about';
 import Services from './pages/services';
 import Contact from './pages/contact';
 import SignUp from './pages/signup';
-import awsConfig from './aws-exports.js';
+import awsConfig from 'aws-exports.js';
 
 Amplify.configure(awsConfig);
 
