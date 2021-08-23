@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-openbotonline-dev-144237-authRole",
+      "UnauthRoleArn": "arn:aws:iam::086084287901:role/amplify-openbotonline-dev-144237-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::086084287901:role/amplify-openbotonline-dev-144237-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-openbotonline-dev-144237-deployment",
+      "UnauthRoleName": "amplify-openbotonline-dev-144237-unauthRole",
+      "StackName": "amplify-openbotonline-dev-144237",
+      "StackId": "arn:aws:cloudformation:us-east-1:086084287901:stack/amplify-openbotonline-dev-144237/e531bc30-0441-11ec-9274-0e22fadd816f",
+      "AmplifyAppId": "d14v9j6elmzmzy"
+    }
+  }
+}
