@@ -3,16 +3,26 @@ import publish from "./publish.js";
 import { AiFillCaretDown, AiFillCaretLeft, AiFillCaretRight, AiFillCaretUp } from "react-icons/ai";
 import "../styles/arrowsStyles.css";
 const Arrows = () => {
-const [msgNum, setMsgNum] = useState(0);
-var keyStates = {
-  "left": useKeyPress("ArrowLeft"),
-  "right": useKeyPress("ArrowRight"),
-  "down": useKeyPress("ArrowDown"),
-  "up": useKeyPress("ArrowUp"),
-}
-publish(JSON.stringify(keyStates));
+  var leftPressed = useKeyPress("ArrowLeft");
+  var rightPressed = useKeyPress("ArrowRight");
+  var upPressed = useKeyPress("ArrowUp");
+  var downPressed = useKeyPress("ArrowDown");
+var keyStates=(leftPressed? 1 : 0).toString() +  
+              (rightPressed? 1 : 0).toString() + 
+              (downPressed? 1 : 0).toString() + 
+              (upPressed? 1 : 0).toString();
+
+useEffect(()=>{
+  keyStates=(leftPressed? 1 : 0).toString() +  
+  (rightPressed? 1 : 0).toString() + 
+  (downPressed? 1 : 0).toString() + 
+  (upPressed? 1 : 0).toString();
+  console.log(keyStates);
+  publish(JSON.stringify(keyStates));
+}, [leftPressed, rightPressed, upPressed, downPressed]);
+
 return (
-<div> 
+<div className="center"> 
   <div className="left" style={{backgroundColor:useKeyPress("ArrowLeft") ? "rgb(227, 171, 16)" : "rgb(245, 224, 120)"}}> 
     <AiFillCaretLeft className="arrow-icon" size={40}/> 
   </div> 
@@ -55,7 +65,7 @@ function useKeyPress(targetKey) {
       window.removeEventListener('keydown', downHandler);
       window.removeEventListener('keyup', upHandler);
     };
-  }, []); // Empty array ensures that effect is only run on mount and unmount
+  }, [targetKey]); // Empty array ensures that effect is only run on mount and unmount
 
   return keyPressed;
 }
