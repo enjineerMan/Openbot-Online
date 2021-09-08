@@ -148,7 +148,7 @@ void update_right_motors() {
       analogWrite(PIN_PWM_R1,64);
     }
     else if (ctrl_right > 0) {
-      analogWrite(PIN_PWM_R2,10);
+      analogWrite(PIN_PWM_R2,64);
 
     }
     else { //Motor brake

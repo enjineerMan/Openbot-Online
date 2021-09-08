@@ -1,5 +1,5 @@
 # Openbot-Online
-Openbot Online is a robot car that can be controlled wirelessly over the internet.
+Openbot Online is a robot car that can be controlled wirelessly over the internet. 
 
 This project is based on the Openbot platform - https://www.openbot.org/, where you can find the original code and assembly instructions. Openbot supports several accessories including an ultrasonic sensor, speed sensors, battery meter, indicator lights, etc., that are not included here. 
 
